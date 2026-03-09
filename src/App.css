@@ -1,0 +1,31 @@
+/* Custom slider styles */
+input[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #facc15;
+  cursor: pointer;
+  border: 3px solid #000;
+  box-shadow: 0 0 10px rgba(250, 204, 21, 0.5);
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #facc15;
+  cursor: pointer;
+  border: 3px solid #000;
+  box-shadow: 0 0 10px rgba(250, 204, 21, 0.5);
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+  background: #fde047;
+  box-shadow: 0 0 15px rgba(250, 204, 21, 0.7);
+}
+
+input[type="range"]::-moz-range-thumb:hover {
+  background: #fde047;
+  box-shadow: 0 0 15px rgba(250, 204, 21, 0.7);
+}
