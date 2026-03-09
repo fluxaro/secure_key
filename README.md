@@ -2,19 +2,22 @@
 
 A premium-quality password generator web application built with React, TailwindCSS, and modern UI/UX principles.
 
+🔗 **Ready for Vercel Deployment** - See [QUICK_DEPLOY.md](QUICK_DEPLOY.md) for one-click deployment!
+
 ## Features
 
 - **Password Generator**: Create secure, random passwords with customizable options
+- **Custom Prefix**: Add your own text prefix (e.g., "great" → "great123@#$5")
 - **Batch Generator**: Generate multiple passwords at once
 - **Password History**: View and manage previously generated passwords
 - **Settings**: Customize default behavior and preferences
 - **Strength Meter**: Real-time password strength analysis with entropy calculation
-- **Modern UI**: Black, white, and yellow design system with smooth animations
+- **Modern UI**: Black, white, and yellow design system with Inter font and smooth animations
 
 ## Tech Stack
 
 - React 18
-- TailwindCSS
+- TailwindCSS 3
 - Framer Motion (animations)
 - Lucide React (icons)
 - React Router DOM (routing)
@@ -40,6 +43,17 @@ Open [http://localhost:5173](http://localhost:5173) in your browser.
 npm run build
 ```
 
+## Deploy to Vercel
+
+### Quick Deploy (Recommended)
+
+1. Push to GitHub
+2. Go to [vercel.com/new](https://vercel.com/new)
+3. Import your repository
+4. Click "Deploy"
+
+See [DEPLOYMENT.md](DEPLOYMENT.md) for detailed instructions.
+
 ## Features Overview
 
 ### Password Options
@@ -49,6 +63,7 @@ npm run build
 - Symbols (!@#$%^&*)
 - Exclude similar characters (i, l, 1, L, o, 0, O)
 - Length: 4-64 characters
+- Custom prefix support
 
 ### Security Features
 - Cryptographically secure random generation using `crypto.getRandomValues()`
@@ -63,6 +78,7 @@ npm run build
 - Copy to clipboard functionality
 - Show/hide password toggle
 - Auto-copy option
+- Inter font for modern typography
 
 ## Design System
 
@@ -74,7 +90,7 @@ npm run build
 - Text: White (#ffffff)
 
 ### Typography
-- Font: System fonts with antialiasing
+- Font: Inter (Google Fonts)
 - Monospace for passwords
 
 ## Project Structure
@@ -90,6 +106,7 @@ src/
 │   ├── OptionsPanel.jsx
 │   ├── StrengthMeter.jsx
 │   ├── GenerateButton.jsx
+│   ├── CustomPrefixInput.jsx
 │   └── ToastNotification.jsx
 ├── pages/
 │   ├── Home.jsx
